@@ -1,0 +1,101 @@
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/back-login.png') center center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group.icon-inside {
+    position: relative;
+}
+
+.form-group.icon-inside .icon-lock {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555; /* Cambia el color según necesites */
+}
+
+.form-group.icon-inside .icon-user {
+    position: absolute;
+    left: 10px;
+    top: 49%;
+    transform: translateY(-50%);
+    color: #555; /* Cambia el color según necesites */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.form-group.icon-inside input {
+    padding-left: 30px; /* Espacio para el ícono */
+    border-radius: 20px; /* Bordes redondos */
+}
+
+.form-group input[type="password"],
+.form-group input[type="text"]{
+    width: 100%; /* Ajusta el ancho al 100% del contenedor .form-group */
+}
+.flex-c-m{
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.login-social-item{
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.bg1 {
+    background-color: #3b5998;
+}
+.bg2 {
+    background-color: #1da1f2;
+}
+.bg3 {
+    background-color: #ea4335;
+}
+.xt1 {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+    padding-bottom: 2%;
+    padding-top: 3%;
+}
+
+.register-form button{
+    border-radius: 20px; 
+}
+
+.btn-primary.btn-block {
+    width: 100%; /* El botón ocupa todo el ancho */
+}
+/* Aquí puedes añadir estilos adicionales para tus elementos si es necesario */
