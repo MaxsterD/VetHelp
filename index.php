@@ -20,7 +20,7 @@
     <div class="background-overlay">
         <div class="container">
             <div class="row justify-content-center align-items-center vh-100">
-                <div class="col-md-6" style="background-color: white; height: 579px;">
+                <div class="col-md-6" style="background-color: #ffffffe8;border-radius: 10px;height: 490px;">
                     <form id="loginForm">
                         <h1 style="margin-top: 10%;margin-left: 3%;">Iniciar Sesión</h1>
                         <div class="login-form">
@@ -34,23 +34,6 @@
                                 <span class="toggle-password eye-icon">👁️</span>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Iniciar Sesion</button>
-                            <div class="xt1 text-center">
-                                <span>O Inicia sesión usando</span>
-                            </div>
-                            <div class="flex-c-m">
-                                <a href="#" class="login-social-item bg1">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                                <a href="#" class="login-social-item bg2">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                                <a href="#" class="login-social-item bg3">
-                                    <i class="fa-brands fa-google"></i>
-                                </a>
-                            </div>
-                            <div class="xt1 text-center">
-                                <a href="Vistas/registro.php">Registrate</a>
-                            </div>
                         </div>
                         
                     </form>
@@ -76,7 +59,7 @@
                     if (datos.success) {
                         alertify.success(`${datos.message}`);
                         setTimeout(function() {
-                            window.location.href = 'Vistas/map.php';
+                            window.location.href = 'Vistas/dashboard.php';
                         }, 1500);
                     } else {
                         alertify.error(`${datos.message}`);
